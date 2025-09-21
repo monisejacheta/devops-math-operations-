@@ -1,20 +1,20 @@
-function somarNumeros(a, b) {
+function soma(a, b) {
     return a + b;
 }
 
-function subtrairNumeros(a, b) {
+function subtracao(a, b) {
   return a - b;
 }
 
-function multiplicarNumeros(a, b) {
+function multiplicacao(a, b) {
   return a * b;
 }
 
-function dividirNumeros(a, b) {
+function divisao(a, b) {
   if (b === 0) {
-    throw new Error("A divisão não pode ser realizada por zero.");
+    throw new Error("Divisão por zero não permitida.");
   }
   return a / b;
 }
 
-module.exports = { somarNumeros, subtrairNumeros, multiplicarNumeros, dividirNumeros };
+module.exports = { soma, subtracao, multiplicacao, divisao };
